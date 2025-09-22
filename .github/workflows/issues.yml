@@ -10,4 +10,3 @@ permissions:
 jobs:
   help-wanted:
     uses: laravel/.github/.github/workflows/issues.yml@main
-# test
