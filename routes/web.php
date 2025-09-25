@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Models\Herbs;
+use App\Models\Herb;
 
 Route::get('/', function () {
     return view('index');
@@ -9,12 +9,12 @@ Route::get('/', function () {
 
 Route::get('/herbs', function ()  {
     return view('herbs', [        
-        'herbs' => Herbs::all()
+        'herbs' => Herb::all()
     ]);
 });
 
 Route::get('/herbs/{id}', function ($id)  {      
-    $herb =  Herbs::findHerb( $id );
+    $herb =  Herb::findHerb( $id );
     return view('herb', ['herb'=>  $herb]);
 });
 
