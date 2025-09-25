@@ -10,7 +10,7 @@ Route::get('/', function () {
 
 Route::get('/herbs', function ()  {
     return view('herbs', [        
-        'herbs' => Herb::all()
+        'herbs' => Herb::allHerbs()
     ]);
 });
 
