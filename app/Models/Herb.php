@@ -2,7 +2,7 @@
 
 namespace App\Models;
 use Illuminate\Support\Arr;
-class Herb{
+class Herb {
     public static function allHerbs(): array {
         return [
             [
@@ -22,6 +22,7 @@ class Herb{
                 'usage' => 'Culinary/Medicinal',
                 'description' => 'Rosemary is a fragrant evergreen herb native to the Mediterranean region. It is commonly used in cooking to flavor meats, soups, and stews, and is also valued for its potential health benefits, including improved digestion and memory enhancement.',
             ]
+            //test
         ];
     }
 
