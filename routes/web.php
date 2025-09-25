@@ -9,12 +9,12 @@ Route::get('/', function () {
 
 Route::get('/herbs', function ()  {
     return view('herbs', [        
-        'herbs' => Herb::allHerbs()
+        'herbs' => Herb::all()
     ]);
 });
 
 Route::get('/herbs/{id}', function ($id)  {      
-    $herb =  Herb::findHerb( $id );
+    $herb =  Herb::find( $id );
     return view('herb', ['herb'=>  $herb]);
 });
 
