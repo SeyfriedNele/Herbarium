@@ -5,6 +5,7 @@ use App\Models\Herb;
 
 Route::get('/', function () {
     return view('index');
+    //test01
 });
 
 Route::get('/herbs', function ()  {
